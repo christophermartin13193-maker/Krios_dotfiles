@@ -1,17 +1,18 @@
 call plug#begin()
 
-" List of plugins
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+"List of plugins
+"Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'vim-airline/vim-airline'
 
 call plug#end()
 
-let g:coc_node_path = '~/.nvm/versions/node/v24.19.0/bin/node'
+"let g:coc_node_path = '~/.nvm/versions/node/v24.19.0/bin/node'
 
 syntax on
 filetype plugin indent on
 
 set number
+set updatetime=300
 set mouse=n
 set showmatch
 set ignorecase
