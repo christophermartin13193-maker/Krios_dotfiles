@@ -25,4 +25,3 @@ set clipboard=unnamedplus       " Intégration du presse-papier système
 set undofile                    " Garde l'historique d'annulation au redémarrage
 set updatetime=300
 set showmatch
-set foldmethod=indent

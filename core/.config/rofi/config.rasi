@@ -1,0 +1,31 @@
+window {
+	location: north;
+	anchor: center;
+	x-offset: 0px;
+	y-offset: 13px;
+}
+
+configuration {
+	modi: "drun";
+	font: "JetBrainsMono NF 13";
+	show-icons: true;
+	fixed-num-lines: true;
+	terminal: "alacritty";
+	icon-theme: "candy-icons";
+	sort: true;
+	sorting-method: "fzf";
+	case-sensitive: false;
+	case-smart: true;
+	cycle: true;
+	hover-select: true;
+	matching: "fuzzy";
+	tokenize: true;
+	max-history-size: 25;
+
+	kb-cancel: "Escape";
+
+  timeout {
+      action: "kb-cancel";
+      delay:  0;
+  }
+}
