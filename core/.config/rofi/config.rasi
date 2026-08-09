@@ -1,9 +1,4 @@
-window {
-	location: north;
-	anchor: center;
-	x-offset: 0px;
-	y-offset: 13px;
-}
+@theme "theme.rasi"
 
 configuration {
 	modi: "drun";

@@ -1,0 +1,98 @@
+* {
+    purple:	rgba(112, 32, 225, 1);
+	demi:	rgba(132, 52, 245, 1);
+	pink:	rgba(222, 70, 205, 1);
+	light:	rgba(237, 151, 224, 1);
+	dark:	rgba(14, 2, 22, 1);
+	invisible: transparent;
+}
+
+window {
+	location: north;
+	anchor: center;
+	x-offset: 0px;
+	y-offset: 13px;
+	//width: 600px;
+	width: 520px;
+	padding: 20px;
+
+	background-color: @invisible;
+}
+
+mainbox {
+	background-color: inherit;
+}
+
+inputbar {
+	children: [ entry ];
+	border: 2px;
+	border-radius: 12px;
+	padding: 8px;
+	margin: 0px 0px 18px 0px;
+
+	background-color: @dark;
+	border-color: @pink;
+}
+
+entry {
+	font: "JetBrainsMono NF ExtraBold 15";
+	placeholder: "Rechercher...";
+
+	border: 2px;
+	border-radius: 12px;
+
+	background-color: inherit;
+	text-color: @purple;
+}
+
+listview {
+	cycle: true;
+	lines: 8;
+	columns: 1;
+	border: 2px;
+	border-radius: 12px;
+	padding: 8px;
+	spacing: 2px;
+	
+	background-color: @purple;
+	border-color: @pink;
+
+	text-color: @light;
+}
+
+element {
+	padding: 2px 2px 2px 12px;
+}
+
+element normal {
+	background-color: inherit;
+}
+
+element alternate normal {
+	border: 2px;
+	border-radius: 12px;
+	background-color: @demi;
+}
+
+element-text {
+	font: "JetBrainsMono NF 15";	
+	background-color: inherit;
+	text-color: @light;
+}
+
+element-icon {
+	background-color: inherit;
+}
+
+element selected {
+	border: 2px;
+	border-radius: 12px;
+
+	background-color: @dark;
+	border-color: @dark;
+}
+
+element-text selected {
+	background-color: inherit;
+	text-color: @purple;
+}
