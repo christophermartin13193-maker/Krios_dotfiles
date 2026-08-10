@@ -1,0 +1,21 @@
+* {
+    font-family: "JetBrainsMono Nerd Font", sans-serif;
+	font-weight: bold;
+    font-size: 18px;
+}
+
+window#waybar {
+    background-color: rgba(43, 48, 59, 0.0);
+    border-bottom: 0px solid rgba(100, 114, 125, 0.5);
+    color: #ffffee;
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+label#pulseaudio {
+	color: rgba(255, 0, 0, 1);
+}

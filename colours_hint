@@ -1,0 +1,7 @@
+yellow		: rgba(209, 210, 91, 1)
+dark_green  : rgba(2, 39, 32, 1)
+light_green : rgba(64, 88, 24, 1)
+purple		: rgba(80, 25, 82, 1)
+red			: rgba(143, 25, 40, 1)
+frozen		: rgba(149, 235, 231, 1)
+shadow		: rgba(17, 6, 31, 1)

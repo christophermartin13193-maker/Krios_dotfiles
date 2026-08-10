@@ -1,10 +1,11 @@
 * {
-    purple:	rgba(112, 32, 225, 1);
-	demi:	rgba(132, 52, 245, 1);
-	pink:	rgba(222, 70, 205, 1);
-	light:	rgba(237, 151, 224, 1);
-	dark:	rgba(14, 2, 22, 1);
-	invisible: transparent;
+	yellow		: rgba(209, 210, 91, 0.90);
+	dark-green  : rgba(2, 39, 32, 0.9);
+	light-green : rgba(64, 88, 24, 0.9);
+	purple		: rgba(80, 25, 82, 0.9);
+	red			: rgba(143, 25, 40, 0.9);
+	frozen		: rgba(149, 235, 231, 0.9);
+	shadow		: rgba(17, 6, 31, 0.9);
 }
 
 window {
@@ -12,37 +13,35 @@ window {
 	anchor: center;
 	x-offset: 0px;
 	y-offset: 13px;
-	//width: 600px;
 	width: 520px;
 	padding: 20px;
 
-	background-color: @invisible;
+	background-color: transparent;
 }
 
 mainbox {
-	background-color: inherit;
+	background-color: transparent;
 }
 
 inputbar {
 	children: [ entry ];
 	border: 2px;
-	border-radius: 12px;
+	border-radius: 12px 12px 0px 0px;
 	padding: 8px;
 	margin: 0px 0px 18px 0px;
 
-	background-color: @dark;
-	border-color: @pink;
+	background-image: linear-gradient(85deg, rgba(109, 110, 34, 0.9), rgba(64, 88, 24, 0.9) );
+	border-color: rgba(209, 210, 91, 0.45);
 }
 
 entry {
 	font: "JetBrainsMono NF ExtraBold 15";
 	placeholder: "Rechercher...";
+	padding: 2px;
+	border-radius: 0px;
 
-	border: 2px;
-	border-radius: 12px;
-
-	background-color: inherit;
-	text-color: @purple;
+	background-color: transparent;
+	text-color: @frozen;
 }
 
 listview {
@@ -50,14 +49,12 @@ listview {
 	lines: 8;
 	columns: 1;
 	border: 2px;
-	border-radius: 12px;
+	border-radius: 0px 0px 12px 12px;
 	padding: 8px;
 	spacing: 2px;
-	
-	background-color: @purple;
-	border-color: @pink;
 
-	text-color: @light;
+	background-image: linear-gradient(78deg, rgba(64, 88, 24, 0.9), rgba(2, 39, 32, 0.9));
+	border-color: rgba(209, 210, 91, 0.45);
 }
 
 element {
@@ -65,34 +62,29 @@ element {
 }
 
 element normal {
-	background-color: inherit;
-}
-
-element alternate normal {
-	border: 2px;
-	border-radius: 12px;
-	background-color: @demi;
+	background-color: transparent;
 }
 
 element-text {
 	font: "JetBrainsMono NF 15";	
-	background-color: inherit;
-	text-color: @light;
+	background-color: transparent;
+	text-color: @shadow;
 }
 
 element-icon {
-	background-color: inherit;
+	background-color: transparent;
 }
 
-element selected {
-	border: 2px;
-	border-radius: 12px;
-
-	background-color: @dark;
-	border-color: @dark;
+element-text normal {
+	border: 0px 0px 2px 0px;
+	border-radius: 0px;
+	border-color: rgba(209, 210, 91, 0.55);
 }
 
 element-text selected {
-	background-color: inherit;
-	text-color: @purple;
+	border: 0px 2px 2px 0px;
+	border-radius: 0px 12px 0px 0px;
+	background-color: transparent;
+	text-color: @frozen;
+	border-color: @red;
 }

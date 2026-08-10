@@ -1,0 +1,46 @@
+{
+    "layer": "top", // Waybar at top layer
+    "position": "bottom", // Waybar position (top|bottom|left|right)
+    "height": 40, // Waybar height (to be removed for auto height)
+    "width": 1280, // Waybar width
+    "spacing": 16, // Gaps between modules (4px)
+    // Choose the order of the modules
+	"modules-left": [ "hyprland/workspaces" ],
+	"modules-center": [ "network", "clock", "pulseaudio"],
+
+
+
+    // Modules configuration
+    "hyprland/workspaces": {
+        "disable-scroll": false,
+        "all-outputs": true,
+        "warp-on-scroll": true,
+        "format": "{name}: {icon}",
+        "format-icons": {
+			//  󰖟 󰊗 󰿎
+            "1": "",
+            "2": "󰖟",
+            "3": "",
+            "4": "󰊗",
+            "5": "󰿎",
+            "urgent": "",
+            "focused": "",
+            "default": ""
+        }
+    },
+
+	"clock": {
+		"tooltip-format": "<big>{:%H:%M}</big>",
+		"format-alt": "{:%Y-%m-%d}"
+	},
+
+    "keyboard-state": {
+        "numlock": true,
+        "capslock": true,
+        "format": "{name} {icon}",
+        "format-icons": {
+            "locked": "",
+            "unlocked": ""
+        }
+    }
+}

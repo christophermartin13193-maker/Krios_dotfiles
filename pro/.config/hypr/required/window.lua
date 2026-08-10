@@ -4,6 +4,16 @@ local gap_extern = 15
 local border_pix = 2
 local gap_calcule = gap_extern - border_pix
 
+-- colours
+
+local yellow	  = "rgb(209, 210, 91)"
+local dark_green  = "rgb(2, 39, 32)"
+local light_green = "rgb(64, 88, 24)"
+local purple      =	"rgb(80, 25, 82)"
+local red		  = "rgb(143, 25, 40)"
+local frozen	  = "rgb(149, 235, 231)"
+local shadow	  = "rgb(17, 6, 31)"
+
 hl.config({
 	general = {
 		gaps_in     = 5,
@@ -11,8 +21,8 @@ hl.config({
 		border_size = border_pix,
 
 		col = {
-			active_border   = { colors = { "rgba(e447ccee)", "rgba(865ceeee)"}, angle = 90 },
-			inactive_border = "rgba(4, 2, 13, 0.6)",
+			active_border   = { colors = { yellow, red }, angle = 90 },
+			inactive_border = shadow,
 		},
 
 		resize_on_border = false,

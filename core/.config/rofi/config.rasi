@@ -13,6 +13,9 @@ configuration {
 	case-smart: true;
 	cycle: true;
 	hover-select: true;
+	me-select-entry: "";
+	me-accept-entry: "MousePrimary";
+
 	matching: "fuzzy";
 	tokenize: true;
 	max-history-size: 25;
