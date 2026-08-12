@@ -1,10 +1,14 @@
 {
-    "layer": "top", // Waybar at top layer
-    "position": "bottom", // Waybar position (top|bottom|left|right)
-    "height": 40, // Waybar height (to be removed for auto height)
-    "width": 1280, // Waybar width
-    "spacing": 16, // Gaps between modules (4px)
-    // Choose the order of the modules
+	// POSITION
+    "layer": "bottom",
+    "position": "bottom",
+	"margin-bottom": 13,
+	"margin-left": 10,
+	"margin-right": 10,
+	"exclusive": true,
+	// SIZE
+    "height": 40, 
+    // MODULE
 	"modules-left": [ "hyprland/workspaces" ],
 	"modules-center": [ "network", "clock", "pulseaudio"],
 
@@ -12,10 +16,8 @@
 
     // Modules configuration
     "hyprland/workspaces": {
-        "disable-scroll": false,
         "all-outputs": true,
-        "warp-on-scroll": true,
-        "format": "{name}: {icon}",
+        "format": "{icon}",
         "format-icons": {
 			//  󰖟 󰊗 󰿎
             "1": "",
@@ -29,18 +31,33 @@
         }
     },
 
-	"clock": {
-		"tooltip-format": "<big>{:%H:%M}</big>",
-		"format-alt": "{:%Y-%m-%d}"
+	"network": {
+		"format-wifi": "{icon} {signalStrength}%",
+		"format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
+		"format-ethernet": " Connecté",
+		"format-disconnected": "󰤮 Déconnecté",
+		"tooltip-format": "IP : {ipaddr}/{cidr}\nFréquence : {frequency}",
+		"on-click": "alacritty -e nmtui"
 	},
 
-    "keyboard-state": {
-        "numlock": true,
-        "capslock": true,
-        "format": "{name} {icon}",
-        "format-icons": {
-            "locked": "",
-            "unlocked": ""
-        }
-    }
+	"clock": {
+		"format": " {:%H:%M}",
+		"format-alt": " {:%Y-%m-%d}",
+		"tooltip": false
+	},
+	
+	"pulseaudio": {
+		"format": "{icon} {volume}%",
+		"format-muted": "{icon} 󰝟",
+		"format-icons": {
+			"headphone": "",
+			"headset": "",
+			"speaker": "󰓃",
+			"hdmi": "󰔂",
+			"default": ["", "", ""]
+		},
+		"on-click": "alacritty -e pulsemixer",
+		"tooltip-format": "Périphérique : {desc}"
+	}
+
 }

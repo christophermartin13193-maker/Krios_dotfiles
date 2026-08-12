@@ -54,7 +54,7 @@ hl.bind(mainMod .. " + mouse:272", hl.dsp.window.drag(), { mouse = true })
 -- resize with mouse
 hl.bind(mainMod .. " + mouse:273", hl.dsp.window.resize(), { mouse = true })
 -- fullscreen
-hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen({ mode = "maximized", action = "toggle" }))
+hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen({ mode = 0, action = "toggle" }))
 -- float
 hl.bind(mainMod .. " + SHIFT + F", hl.dsp.window.float({ action = "toggle" }))
 -- pseudo

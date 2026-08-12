@@ -1,21 +1,114 @@
-* {
-    font-family: "JetBrainsMono Nerd Font", sans-serif;
-	font-weight: bold;
-    font-size: 18px;
-}
+@define-color yellow rgba(209, 210, 91, 1);
+@define-color orange rgba(171, 98, 61, 1);
+@define-color red rgba(143, 25, 40, 1);
+@define-color dark_green rgba(2, 39, 32, 1);
+@define-color light_green rgba(64, 88, 24, 1);
+@define-color purple rgba(80, 25, 82, 1);
+@define-color frozen rgba(149, 235, 231, 1);
+@define-color shadow rgba(17, 6, 31, 1);
 
 window#waybar {
-    background-color: rgba(43, 48, 59, 0.0);
-    border-bottom: 0px solid rgba(100, 114, 125, 0.5);
-    color: #ffffee;
-    transition-property: background-color;
-    transition-duration: .5s;
+	/* FONT */
+	font-family: "JetBrainsMono Nerd", "Nerd Font", sans-serif;
+	font-size: 20px;
+	font-weight: 800;
+	/* COLOR */
+	background: linear-gradient( 176deg, rgba(17, 6, 31, 0.85), rgba(2, 39, 32, 0.85) );
+	color: @frozen;
+	/* BORDER */
+	border: 2px solid rgba(17, 6, 31, 0.85);
+	border-radius: 12px;
 }
 
-window#waybar.hidden {
-    opacity: 0.2;
+tooltip {
+	background: linear-gradient( 168deg, rgba(17, 6, 31, 0.85), rgba(2, 39, 32, 0.85) );
+	border: 1px solid @yellow; 
 }
 
-label#pulseaudio {
-	color: rgba(255, 0, 0, 1);
+tooltip label {
+	color: @frozen;
+	padding: 4px;
+}
+
+#network, #clock, #pulseaudio {
+	margin: 0 16px;
+}
+
+#clock:hover,
+#network:hover,
+#pulseaudio:hover {
+	color: @light_green;
+}
+
+#network.disconnected {
+	color: @orange;
+}
+
+#network.disconnected:hover {
+	color: @light_green;
+}
+
+#pulseaudio.muted {
+	color: @orange;
+}
+
+#pulseaudio.muted:hover {
+	color: @light_green;
+}
+
+#workspaces {
+	background-color: transparent;
+	margin: 0px 12px;
+	font-size: 24px;
+}
+
+#workspaces button {
+	color: @frozen;
+	background-color: transparent;
+
+	margin: 0 6px;
+	/*
+	border-top: 2px solid transparent;
+	border-bottom: 2px solid transparent;
+	border-left: none;
+	border-right: none;
+	*/
+}
+
+#workspaces button.active {
+	color: @yellow;
+
+	box-shadow: none;
+	text-shadow: none;
+	/*
+	border-radius: 0px;
+	border-top: 2px solid @yellow;
+	border-bottom: 2px solid @yellow;
+	border-left: none;
+	border-right: none;
+	*/
+}
+
+#workspaces button.active:hover {
+	color: @yellow;
+
+	box-shadow: none;
+	text-shadow: none;
+}
+
+#workspaces button:hover {
+	transition: all 0.0s;
+
+	color: @light_green;
+	background: transparent;
+	border-color: transparent;
+	box-shadow: none;
+	text-shadow: none;
+	/*
+	border-radius: 0px;
+	border-top: 2px solid transparent;
+	border-bottom: 2px solid transparent;
+	border-left: none;
+	border-right: none;
+	*/
 }

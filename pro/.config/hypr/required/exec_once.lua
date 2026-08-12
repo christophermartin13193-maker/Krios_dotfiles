@@ -2,4 +2,5 @@
 
 hl.on("hyprland.start", function ()
 	hl.exec_cmd("hyprpaper")
+	hl.exec_cmd("waybar -c ~/.config/waybar/bottom/.config.jsonc -s ~/.config/waybar/bottom/sytle.css")
 end)
