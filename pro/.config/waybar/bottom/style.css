@@ -58,7 +58,8 @@ tooltip label {
 
 #workspaces {
 	background-color: transparent;
-	margin: 0px 12px;
+	/* margin: 0px 12px; */
+	margin: 0px 8px;
 	font-size: 24px;
 }
 
@@ -66,13 +67,7 @@ tooltip label {
 	color: @frozen;
 	background-color: transparent;
 
-	margin: 0 6px;
-	/*
-	border-top: 2px solid transparent;
-	border-bottom: 2px solid transparent;
-	border-left: none;
-	border-right: none;
-	*/
+	margin: 0px 3px;
 }
 
 #workspaces button.active {
@@ -80,13 +75,6 @@ tooltip label {
 
 	box-shadow: none;
 	text-shadow: none;
-	/*
-	border-radius: 0px;
-	border-top: 2px solid @yellow;
-	border-bottom: 2px solid @yellow;
-	border-left: none;
-	border-right: none;
-	*/
 }
 
 #workspaces button.active:hover {
@@ -104,11 +92,4 @@ tooltip label {
 	border-color: transparent;
 	box-shadow: none;
 	text-shadow: none;
-	/*
-	border-radius: 0px;
-	border-top: 2px solid transparent;
-	border-bottom: 2px solid transparent;
-	border-left: none;
-	border-right: none;
-	*/
 }
