@@ -1,11 +1,12 @@
 * {
-	yellow		: rgba(209, 210, 91, 0.90);
-	dark-green  : rgba(2, 39, 32, 0.9);
-	light-green : rgba(64, 88, 24, 0.9);
-	purple		: rgba(80, 25, 82, 0.9);
-	red			: rgba(143, 25, 40, 0.9);
-	frozen		: rgba(149, 235, 231, 0.9);
-	shadow		: rgba(17, 6, 31, 0.9);
+	yellow		: rgba(209, 210, 91, 1);
+	orange		: rgba(171, 98, 61, 1);
+	red			: rgba(143, 25, 40, 1);
+	dark-green  : rgba(2, 39, 32, 1);
+	light-green : rgba(64, 88, 24, 1);
+	purple		: rgba(80, 25, 82, 1);
+	frozen		: rgba(149, 235, 231, 1);
+	shadow		: rgba(17, 6, 31, 1);
 }
 
 window {
@@ -30,8 +31,9 @@ inputbar {
 	padding: 8px;
 	margin: 0px 0px 18px 0px;
 
-	background-image: linear-gradient(88deg, rgba(86, 112, 34, 0.9), rgba(64, 88, 24, 0.9) );
-	border-color: rgba(209, 210, 91, 0.45);
+	background-color: transparent;
+	background-image: linear-gradient(88deg, rgba(17, 6, 31, 0.85), rgba(22, 14, 36, 0.85));
+	border-color: rgba(17, 6, 31, 0.85);
 }
 
 entry {
@@ -41,7 +43,7 @@ entry {
 	border-radius: 0px;
 
 	background-color: transparent;
-	text-color: @frozen;
+	text-color: @yellow;
 }
 
 listview {
@@ -53,8 +55,9 @@ listview {
 	padding: 8px;
 	spacing: 2px;
 
-	background-image: linear-gradient(78deg, rgba(64, 88, 24, 0.9), rgba(2, 39, 32, 0.9));
-	border-color: rgba(209, 210, 91, 0.45);
+	background-color: transparent;
+	background-image: linear-gradient(76deg, rgba(17, 6, 31, 0.85), rgba(2, 39, 32, 0.85));
+	border-color: rgba(17, 6, 31, 0.85);
 }
 
 element {
@@ -68,7 +71,7 @@ element normal {
 element-text {
 	font: "JetBrainsMono NF 15";	
 	background-color: transparent;
-	text-color: @shadow;
+	text-color: @frozen;
 }
 
 element-icon {
@@ -78,13 +81,13 @@ element-icon {
 element-text normal {
 	border: 0px 0px 2px 0px;
 	border-radius: 0px;
-	border-color: rgba(209, 210, 91, 0.55);
+	border-color: rgba(64, 88, 24, 0.85);
 }
 
 element-text selected {
 	border: 0px 2px 2px 0px;
 	border-radius: 0px 12px 0px 0px;
 	background-color: transparent;
-	text-color: @frozen;
+	text-color: @yellow;
 	border-color: @red;
 }

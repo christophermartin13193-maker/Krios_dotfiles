@@ -7,7 +7,7 @@
 	"margin-right": 10,
 	"exclusive": true,
 	// SIZE
-    "height": 40, 
+	"width": 960,
     // MODULE
 	"modules-left": [ "hyprland/workspaces" ],
 	"modules-center": [ "network", "clock", "pulseaudio"],
@@ -19,12 +19,13 @@
         "all-outputs": true,
         "format": "{icon}",
         "format-icons": {
-			//  󰖟 󰊗 󰿎
+			//  󰖟 󰊗 󰿎 
             "1": "",
             "2": "󰖟",
             "3": "",
             "4": "󰊗",
             "5": "󰿎",
+			"6": "",
             "urgent": "",
             "focused": "",
             "default": ""
