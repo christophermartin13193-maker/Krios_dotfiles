@@ -2,13 +2,10 @@
 [[ $- != *i* ]] && return
 
 # ALIAS
-alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias eza='eza --color=auto --icons=auto'
 alias ll='eza -lA --icons --octal-permissions --group-directories-first --git'
-
-# start zoxide
-eval "$(zoxide init bash)"
+alias z='cd'
 
 # start starship
 eval "$(starship init bash)"

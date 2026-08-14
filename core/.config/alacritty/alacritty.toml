@@ -19,3 +19,6 @@ style = "Italic"
 [font.normal]
 family = "JetBrainsMono NF"
 style = "Regular"
+
+[terminal.shell]
+program = "/usr/bin/fish"
