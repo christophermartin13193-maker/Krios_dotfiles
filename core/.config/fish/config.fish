@@ -7,4 +7,7 @@ if status is-interactive
 
 	# start starship
 	starship init fish | source
+
+	# VARIABLES
+	set fish_greeting ""
 end

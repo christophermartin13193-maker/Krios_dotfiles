@@ -38,7 +38,8 @@
 		"format-ethernet": " Connecté",
 		"format-disconnected": "󰤮 Déconnecté",
 		"tooltip-format": "IP : {ipaddr}/{cidr}\nFréquence : {frequency}",
-		"on-click": "alacritty -e nmtui"
+		//"on-click": "alacritty -e nmtui"
+		"on-click": "nm-connection-editor"
 	},
 
 	"clock": {
@@ -57,7 +58,8 @@
 			"hdmi": "󰔂",
 			"default": ["", "", ""]
 		},
-		"on-click": "alacritty -e pulsemixer",
+		//"on-click": "alacritty -e pulsemixer",
+		"on-click": "pavucontrol",
 		"tooltip-format": "Périphérique : {desc}"
 	}
 

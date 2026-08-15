@@ -82,3 +82,22 @@ hl.window_rule({
 	match = { float = false, workspace = "f[1]" },
 	border_size = 0,
 })
+
+
+-- App open in particular workspace
+hl.window_rule({ match = { class = "codium" }, workspace = "3" })
+hl.window_rule({ match = { class = "firefox" }, workspace = "2" })
+hl.window_rule({ match = { class = "net.retrodeck.retrodeck" }, workspace = "4" })
+
+-- Waybar app
+hl.window_rule({
+	match = { class = "org.pulseaudio.pavucontrol" },
+	float = true,
+	move = { "(cursor_x-(window_w*0.50))", "(cursor_y-(window_h*1.15))" }
+})
+
+hl.window_rule({
+	match = { class = "nm-connection-editor" },
+	float = true,
+	move = { "(cursor_x-(window_w*0.50))", "(cursor_y-(window_h*1.15))" }
+})
