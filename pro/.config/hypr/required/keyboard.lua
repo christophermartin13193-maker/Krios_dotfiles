@@ -24,7 +24,7 @@ hl.config({
 
 -- local variables
 local mainMod = "SUPER"
-local terminal = "alacritty"
+local terminal = "kitty"
 local inventory = "rofi -show drun"
 local shot_monitor = "hyprshot -o ~/media/img/screenshot -m output -m active"
 local shot_window = "hyprshot -o ~/media/img/screenshot -m window -m active"
