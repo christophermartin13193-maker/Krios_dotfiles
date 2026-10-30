@@ -89,6 +89,7 @@ hl.window_rule({ match = { class = "codium" }, workspace = "3" })
 hl.window_rule({ match = { class = "firefox" }, workspace = "2" })
 hl.window_rule({ match = { class = "net.retrodeck.retrodeck" }, workspace = "4" })
 hl.window_rule({ match = { class = "Godot" }, workspace = "6" })
+hl.window_rule({ match = { class = "Pixelorama" }, workspace = "6" })
 
 -- Waybar app
 hl.window_rule({
